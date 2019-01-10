@@ -1,0 +1,16 @@
+{
+  "name": "bahceden",
+  "version": "1.0.0",
+  "description": "I present you our fully natural olive oil, walnut and hazelnut from our gardens.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://onurcangundogdu.github.io/bahceden",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
