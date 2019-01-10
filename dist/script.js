@@ -1,4 +1,1 @@
-function anyFunction() {
-  console.log('test function');
-}
-anyFunction();
+console.log('Hello world!');
