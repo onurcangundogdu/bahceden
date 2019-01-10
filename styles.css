@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header::after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/olive-oil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    opacity: 0.6;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: all 500ms;
+}
+
+header:hover::after {
+    filter: none;
+    -webkit-filter: none;
+}
+
+header div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-weight: bold;
+    color: #222;
+    width: 50%;
+    text-align: center;
+    transition: all 500ms;
+}
+
+header:hover div {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+header div h1 {
+    font-size: 2.5rem;
+    margin: 5vh 0;
+}
+
+header div p {
+    font-size: 1.2rem;
+}
+
+
+section.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5vh;
+    background-color: rgb(62,58,28);
+    color: rgb(235,228,218);
+    text-align: center;
+}
+
+section.grid-3 h2 {
+    margin-bottom: 30px;
+}
+
+section.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 5vh;
+    background-color: rgb(235,228,218);
+    color: rgb(62,58,28);
+}
+
+footer {
+    background-color: rgb(62,58,28);
+    color: rgb(235,228,218);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+@media(max-width:500px) {
+    header::after {
+        height: 50vh;
+    }
+    header div {
+        width: 100%;
+        top: 25%;
+    }
+    header div p{
+        display: none;
+    }
+    section.grid-3, section.grid-2 {
+        grid-template-columns: 1fr;
+    }
+    section div {
+        margin-bottom: 2rem;
+    }
+}
